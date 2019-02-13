@@ -447,7 +447,22 @@ class Llvm(CMakePackage):
             'git': 'https://github.com/llvm-mirror/openmp.git',
             'destination': 'projects',
             'placement': 'openmp'
-        }
+        },
+        'compiler-rt': {
+            'git': 'https://github.com/llvm-mirror/compiler-rt',
+            'destination': 'projects',
+            'placement': 'compiler-rt'
+        },
+        'libcxx': {
+            'git': 'https://github.com/llvm-mirror/libcxx',
+            'destination': 'projects',
+            'placement': 'libcxx',
+        },
+        'libcxxabi': {
+            'git':  'https://github.com/llvm-mirror/libcxxabi',
+            'destination': 'projects',
+            'placement': 'libcxxabi',
+        },
     }
 
     flang_releases = [
@@ -464,7 +479,10 @@ class Llvm(CMakePackage):
             'commit': 'd8b30082648dc869eba68f9e539605f437d7760c',
             'resources': {
                 'flang-driver': 'dd7587310ae498c22514a33e1a2546b86af9cf25',
-                'openmp': 'd5aa29cb3bcf51289d326b4e565613db8aff65ef'
+                'openmp': 'd5aa29cb3bcf51289d326b4e565613db8aff65ef',
+                'compiler-rt': '0cc870394e803e12048451659fc5ccf6e69d4e70',
+                'libcxx': 'cb9e96f6f152733457ddf0e3296fc10d3c34c39c',
+                'libcxxabi': '9245d481eb3e890f708ff2d7dadf2a10c04748ba',
             }
         },
         {
