@@ -19,7 +19,7 @@ class Bzip2(Package):
     homepage = "https://sourceware.org/bzip2/"
     url      = "https://fossies.org/linux/misc/bzip2-1.0.6.tar.gz"
 
-    version('1.0.6', '00b516f4704d4a7cb50a1d97e6e8e15b')
+    version('1.0.8', '67e051268d0c475ea773822f7500d0e5')
 
     variant('shared', default=True, description='Enables the build of shared libraries.')
 
